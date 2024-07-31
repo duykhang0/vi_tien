@@ -39,6 +39,7 @@ const formWallet = (props) => {
         setData(cloneData);
         setOpenForn(false)
         formWallet.resetForm()
+        alert("Nạp tiền thành công")
     } else{
         if(data.balance - formWallet.values.money < 0){
           formWallet.setErrors({money: "Khoảng dư trong tài khoảng không đủ"})
@@ -55,6 +56,8 @@ const formWallet = (props) => {
           setData(cloneData);
           setOpenForn(false)
           formWallet.resetForm()
+          alert("Rút tiền thành công")
+
         }
     }
   }
